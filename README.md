@@ -1,63 +1,80 @@
-## Exp 1 Mode Characteristics of Fiber Optic Cable
+# Experimental-verification-of-various-Fiber-losses--Propagation-Loss-Bend-Loss
+# AIM:
+To measure propagation loss & bending losses for two different wavelengths in plastic 
+Fiber provided with the kit.
+# EQUIPMENTS REQUIRED :
+▪ Link-B Kit with power supply.
+▪ Patch chords.
+▪ 20MHz Dual Channel Oscilloscope.
+▪ 1 MHz Function Generator.
+▪ 1 Meter Fiber Cable.
+# THEORY :
+Optical Fibers are available in different variety of materials. These materials are usually selected by 
+taking into account their absorption characteristics for different wavelengths of light. In case of Optical 
+Fiber, since the signal is transmitted in the form of light which is completely different in nature as that 
+of electrons, one has to consider the interaction of matter the radiation to study the losses in fiber.
+Losses are introduced in fiber due to various reasons. As light propagates from one end of Fiber to another 
+end, part of it is absorbed in the material exhibiting absorption loss. Also part of the light is reflected back
+or in some other directions from the impurity particles present in the material contributing to the loss of 
+the signal at the other end of the Fiber. In general terms it is know as propagation loss. Plastic Fibers have 
+higher loss of the order of 180 dB/Km.
+Whenever the condition for angel of incidence of the incident lights is violated the losses are introduced 
+due to refraction of light. This occurs when fiber is subjected to bending. Lower the radius of curvature 
+more is the loss. Other losses are due to the coupling of Fiber at LED and photo detector ends.
+# PROCEDURE :
+▪ Connect the power supply with proper polarity to the kit link-B and switch it on.
+▪ Keep all Switch Faults in OFF position.
+▪ Keep switch SW8 towards TX position.
+▪ Keep switch SW9 towards TX1 position.
+▪ Keep Jumper JP5 towards +12V position.
+▪ Keep Jumpers JP6, JP9, JP10 shorted.
+▪ Keep Jumper JP8 towards sine position.
+▪ Keep Intensity control pot P2 towards minimum position.
+▪ Feed about 2Vpp sinusoidal signal of 1 KHz from the function generator to the IN post of Analog 
+Buffer.
+▪ Connect the output post OUT of Analog Buffer to the post TX IN of Transmitter.
+▪ Slightly unscrew the cap of SFH756V (660nm). Do not remove the cap from the connector. Once the 
+cap is loosened, insert the one meter fiber into the cap. Now tighten the cap by screwing it back.
+▪ Connect the other end of the Fiber to detector SFH350V (Photo Transistor Detector) very carefully.
+▪ Observe the detected signal at post ANALOG OUT on oscilloscope. Adjust Intensity control pot P2 
+Optical Power control potentiometer so that you receive signal of 2Vpp amplitude.
+▪ Measure the peak value of the received signal at ANALOG OUT terminal. Let this value be V1.
+▪ Now replace 1 meter Fiber by 3 Meter Fiber. Do not disturb any settings. Again take the peak 
+voltage reading and let it be V2.
+▪ If a is the attenuation of the Fiber then we have. P1/P2 = V1/V2 = e [ -a (L1+L2 ) ]
+Where
+a = nepers/ Meter
+L1 = Fiber Length for V1 L2 = Fiber Length for V2
+This a is for peak wavelength of 660nm
+▪ Keep switch SW9 towards TX2 position.
+▪ Keep Jumper JP7 towards +12V position.
+▪ Remove fiber cable from SFH756V (660nm) & SFH350V and insert one meter fiber between 
+SFH450V (950nm) & SFH350V.
+▪ Observe the detected signal at post ANALOG OUT on oscilloscope.
+▪ Measure the peak value of the received signal at ANALOG OUT terminal. Let this value be V1.
+▪ Now replace 1 meter Fiber by 3 Meter Fiber. Do not disturb any settings. Again take the peak 
+voltage reading and let it be V2.
+▪ If a is the attenuation of the Fiber then we have. P1/P2 = V1/V2 = e [ -a (L1+L2 ) ]
+Where
+a = nepers/ Meter
+L1 = Fiber Length for V1 ; L2 = Fiber Length for V2
+This a is for peak wavelength of 950nm
+▪ Compare the two a values.
+MEASUREMENT OF BENDING LOSSES:
+▪ Remove fiber cable from SFH450V (950nm) & SFH350V and insert one meter fiber between 
+SFH756V (660nm) & SFH350V.
+▪ Bend the Fiber in a loop. Measure the amplitude of the received signal.
+▪ Keep reducing the diameter of bend to about 2 cm & take corresponding out voltage readings. (Do 
+not reduce loop diameter less than 1 cm).
+▪ Plot a graph of the received signal amplitude versus the loop diameter.
+# TABULATION:
 
-## 🎯 AIM
-To study the mode characteristics of fiber optic cable and observe the lower order Linearly Polarized (LP) modes.
+![WhatsApp Image 2025-11-24 at 5 59 33 AM(1)](https://github.com/user-attachments/assets/cf072b3e-693c-4c33-8d09-ac47161ae2b9)
 
 
-## 🧰 EQUIPMENTS REQUIRED
-1. LASER Source (633 nm – 1mW)  
-2. Source to Fiber Coupler  
-3. Single Mode Fiber  
-4. Fiber Holding Stand  
-5. Opaque Screen  
-
-## 📚 THEORY
-
-The central spot carries 95% of the intensity for laser beams with Gaussian profile. I = Ioe-2(r / w) ^2 where e = 2.718 is the base of the natural logarithm. An accepted definition of a radius of a Gaussian beam is t 0.135 times its peak value Io. This radius is called spot size. The spot diameter is w.
-Spot Diameter (d) micron = Focal length of the Lens (f) mm x Laser beam full divergence angle (DA) mrad.
-In order to achieve maximum coupling efficiency, the fiber core diameter has to be bigger than the spot diameter.
-NA rays = Laser Beam Diameter (B.D.) 2 x Lens Focal Length (f)
-The source coupler is comprised of two base plates. One of the base plates contains a focusing lens
-and a female connector receptacle. The other base plate is attached onto the laser. An O-ring is sandwiched between the base plates. Threaded screws interconnect the two base plates. A screw driver
-to alter the angular orientation of one base plate relative to the	other can then adjust the screws.
- 
-The number of modes propagating through the fiber depends on V-number. If the fiber whose number is less than 2.045,	it allows to propagate single mode through it, so it is called as Single Mode fiber.
-A Multimode fiber, V-number is slightly greater than 2.045 but the number of allowed modes is small enough that they may be individually identified when the output of the fiber is examined.
-When V < 2.045, then only a single mode may propagate in the fiber waveguide. This mode is HE11 mode or LP01 – Linearly Polarized mode.
-When V > 2.045, other modes may propagate, when V is slightly greater than 2.045 i.e. V = 4.91 then 4 Linearly Polarized modes will propagate through fiber.
+# CALCULATION:
+ ![WhatsApp Image 2025-11-24 at 5 59 34 AM](https://github.com/user-attachments/assets/536c6474-d0c3-42bf-ab97-358a856bcd7b)
 
 
-## 🧪 PROCEDURE
-
-1. Place the optical breadboard on a flat surface.
-2. Mount the He-Ne laser source securely onto the breadboard.
-3. Attach the laser to the fiber coupler mount, aligned with the laser exit.
-4. Turn on the laser and align the beam spot centrally using the mount's travel adjustments.
-5. Check for back reflection from the rod lens and adjust screws to redirect it into the laser exit.
-6. Confirm central alignment using a white card; adjust if off-center.
-7. Connect the multimode fiber patch cord to the coupler and secure the other end in the fiber holder.
-8. Adjust the fiber tip height to ~50 mm above the white sheet.
-9. Observe the multimode speckle pattern on the screen. Adjust screws to refine the pattern.
-10. Replace with single mode fiber patch cord. Observe blur patterns of LP modes (e.g., single lobe, two lobes, etc.) by fine-tuning the coupler screws.
-
-## 📊 OBSERVATION AND CALCULATION
-
-## Tabulation
-```
-S.No	   LCM	   WCM	   NA
-1	      2.5	   0.3	   0.059
-```
-## calculation
-
-<img width="280" height="208" alt="image" src="https://github.com/user-attachments/assets/67210885-b96f-4898-9d83-9625d90c1ac2" />
-
-<img width="773" height="588" alt="image" src="https://github.com/user-attachments/assets/8d7a1f09-4b7b-446f-b464-d1b6b3937d71" />
-
-<img width="831" height="353" alt="image" src="https://github.com/user-attachments/assets/ffaa5b57-d25b-44b4-b39b-b4b3416f5662" />
-
-<img width="796" height="353" alt="image" src="https://github.com/user-attachments/assets/a8c0da3f-445d-4169-95dc-bbdc3f5ed3e9" />
-
-
-
-## Result
-Thus the mode characteristics of fibre optic cable is verified and output is studied succesfully
+# RESULT:
+The propogation and bending losses of the plastic optical fiber were measured for two different wavelength.It was observed that losses varied with wavelength and incerased with tighter bending.
